@@ -13,7 +13,7 @@ export async function getOrders() {
       url: '/orders/3000',
       date: 'May 9, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$12.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -40,7 +40,7 @@ export async function getOrders() {
       url: '/orders/3001',
       date: 'May 5, 2024',
       amount: {
-        usd: '$299.00',
+        usd: '$24.00',
         cad: '$409.13',
         fee: '$12.27',
         net: '$396.86',
@@ -67,7 +67,7 @@ export async function getOrders() {
       url: '/orders/3002',
       date: 'Apr 28, 2024',
       amount: {
-        usd: '$150.00',
+        usd: '$36.00',
         cad: '$205.25',
         fee: '$6.15',
         net: '$199.10',
@@ -94,7 +94,7 @@ export async function getOrders() {
       url: '/orders/3003',
       date: 'Apr 23, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$24.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -121,7 +121,7 @@ export async function getOrders() {
       url: '/orders/3004',
       date: 'Apr 18, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -148,7 +148,7 @@ export async function getOrders() {
       url: '/orders/3005',
       date: 'Apr 14, 2024',
       amount: {
-        usd: '$299.00',
+        usd: '$24.00',
         cad: '$409.13',
         fee: '$12.27',
         net: '$396.86',
@@ -175,7 +175,7 @@ export async function getOrders() {
       url: '/orders/3006',
       date: 'Apr 10, 2024',
       amount: {
-        usd: '$150.00',
+        usd: '$12.00',
         cad: '$205.25',
         fee: '$6.15',
         net: '$199.10',
@@ -202,7 +202,7 @@ export async function getOrders() {
       url: '/orders/3007',
       date: 'Apr 6, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$24.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -229,7 +229,7 @@ export async function getOrders() {
       url: '/orders/3008',
       date: 'Apr 3, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$12.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -256,7 +256,7 @@ export async function getOrders() {
       url: '/orders/3009',
       date: 'Mar 29, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$48.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -283,7 +283,7 @@ export async function getOrders() {
       url: '/orders/3010',
       date: 'Mar 25, 2024',
       amount: {
-        usd: '$299.00',
+        usd: '$12.00',
         cad: '$409.13',
         fee: '$12.27',
         net: '$396.86',
@@ -310,7 +310,7 @@ export async function getOrders() {
       url: '/orders/3011',
       date: 'Mar 21, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$24.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -337,7 +337,7 @@ export async function getOrders() {
       url: '/orders/3012',
       date: 'Mar 16, 2024',
       amount: {
-        usd: '$150.00',
+        usd: '$12.00',
         cad: '$205.25',
         fee: '$6.15',
         net: '$199.10',
@@ -364,7 +364,7 @@ export async function getOrders() {
       url: '/orders/3013',
       date: 'Mar 12, 2024',
       amount: {
-        usd: '$299.00',
+        usd: '$24.00',
         cad: '$409.13',
         fee: '$12.27',
         net: '$396.86',
@@ -391,7 +391,7 @@ export async function getOrders() {
       url: '/orders/3014',
       date: 'Mar 8, 2024',
       amount: {
-        usd: '$150.00',
+        usd: '$12.00',
         cad: '$205.25',
         fee: '$6.15',
         net: '$199.10',
@@ -418,7 +418,7 @@ export async function getOrders() {
       url: '/orders/3015',
       date: 'Mar 4, 2024',
       amount: {
-        usd: '$150.00',
+        usd: '$36.00',
         cad: '$205.25',
         fee: '$6.15',
         net: '$199.10',
@@ -445,7 +445,7 @@ export async function getOrders() {
       url: '/orders/3016',
       date: 'Feb 28, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$12.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -472,7 +472,7 @@ export async function getOrders() {
       url: '/orders/3017',
       date: 'Feb 23, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$12.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -499,7 +499,7 @@ export async function getOrders() {
       url: '/orders/3018',
       date: 'Feb 19, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$24.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -526,7 +526,7 @@ export async function getOrders() {
       url: '/orders/3019',
       date: 'Feb 15, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -553,7 +553,7 @@ export async function getOrders() {
       url: '/orders/3020',
       date: 'Feb 10, 2024',
       amount: {
-        usd: '$299.00',
+        usd: '$24.00',
         cad: '$409.13',
         fee: '$12.27',
         net: '$396.86',
@@ -580,7 +580,7 @@ export async function getOrders() {
       url: '/orders/3021',
       date: 'Feb 5, 2024',
       amount: {
-        usd: '$80.00',
+        usd: '$24.00',
         cad: '$109.47',
         fee: '$3.28',
         net: '$106.19',
@@ -607,7 +607,7 @@ export async function getOrders() {
       url: '/orders/3022',
       date: 'Feb 1, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -634,7 +634,7 @@ export async function getOrders() {
       url: '/orders/3023',
       date: 'Jan 27, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -661,7 +661,7 @@ export async function getOrders() {
       url: '/orders/3024',
       date: 'Jan 22, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',
@@ -688,7 +688,7 @@ export async function getOrders() {
       url: '/orders/3025',
       date: 'Jan 18, 2024',
       amount: {
-        usd: '$114.99',
+        usd: '$12.00',
         cad: '$157.34',
         fee: '$4.72',
         net: '$152.62',

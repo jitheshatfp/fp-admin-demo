@@ -23,6 +23,7 @@ import {
 } from '@/components/sidebar'
 import { SidebarLayout } from '@/components/sidebar-layout'
 import { getEvents } from '@/data'
+import { BuildingLibraryIcon, ChartBarIcon, FolderIcon } from '@heroicons/react/16/solid'
 import {
   ArrowRightStartOnRectangleIcon,
   ChevronDownIcon,
@@ -32,6 +33,7 @@ import {
   PlusIcon,
   ShieldCheckIcon,
   UserCircleIcon,
+  UserIcon,
 } from '@heroicons/react/16/solid'
 import {
   Cog6ToothIcon,
@@ -109,7 +111,7 @@ export function ApplicationLayout({
                 <DropdownDivider />
                 <DropdownItem href="#">
                   <Avatar slot="icon" src="/teams/catalyst.svg" />
-                  <DropdownLabel>Fitness Passport</DropdownLabel>
+                  <DropdownLabel>Admin</DropdownLabel>
                 </DropdownItem>
                 {/* <DropdownItem href="#">
                   <Avatar slot="icon" initials="BE" className="bg-purple-500 text-white" />
@@ -117,8 +119,8 @@ export function ApplicationLayout({
                 </DropdownItem> */}
                 <DropdownDivider />
                 <DropdownItem href="#">
-                  <PlusIcon />
-                  <DropdownLabel>New team&hellip;</DropdownLabel>
+                  <UserIcon/>
+                  <DropdownLabel>Staff</DropdownLabel>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
@@ -127,16 +129,16 @@ export function ApplicationLayout({
           <SidebarBody>
             <SidebarSection>
               <SidebarItem href="/" current={pathname === '/'}>
-                <HomeIcon />
-                <SidebarLabel>Home</SidebarLabel>
+                <FolderIcon />
+                <SidebarLabel>Dashboard</SidebarLabel>
               </SidebarItem>
               <SidebarItem href="/events" current={pathname.startsWith('/events')}>
-                <Square2StackIcon />
-                <SidebarLabel>Events</SidebarLabel>
+                <BuildingLibraryIcon />
+                <SidebarLabel>Facilities</SidebarLabel>
               </SidebarItem>
               <SidebarItem href="/orders" current={pathname.startsWith('/orders')}>
-                <TicketIcon />
-                <SidebarLabel>Orders</SidebarLabel>
+                <ChartBarIcon />
+                <SidebarLabel>Reports</SidebarLabel>
               </SidebarItem>
               <SidebarItem href="/settings" current={pathname.startsWith('/settings')}>
                 <Cog6ToothIcon />
@@ -144,14 +146,14 @@ export function ApplicationLayout({
               </SidebarItem>
             </SidebarSection>
 
-            <SidebarSection className="max-lg:hidden">
-              <SidebarHeading>Upcoming Events</SidebarHeading>
+            {/* <SidebarSection className="max-lg:hidden">
+              <SidebarHeading>Upcoming Reports</SidebarHeading>
               {events.map((event) => (
                 <SidebarItem key={event.id} href={event.url}>
                   {event.name}
                 </SidebarItem>
               ))}
-            </SidebarSection>
+            </SidebarSection> */}
 
             <SidebarSpacer />
 
@@ -175,7 +177,7 @@ export function ApplicationLayout({
                   <span className="min-w-0">
                     <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">Erica</span>
                     <span className="block truncate text-xs/5 font-normal text-zinc-500 dark:text-zinc-400">
-                      erica@example.com
+                      Administrator
                     </span>
                   </span>
                 </span>
