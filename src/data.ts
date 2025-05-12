@@ -725,7 +725,7 @@ export async function getEvents() {
   return [
     {
       id: 1000,
-      name: 'Bear Hug: Live in Concert',
+      name: 'Access granted',
       url: '/events/1000',
       date: 'May 20, 2024',
       time: '10 PM',
@@ -739,11 +739,11 @@ export async function getEvents() {
       pageViewsChange: '-0.75%',
       status: 'On Sale',
       imgUrl: '/events/bear-hug.jpg',
-      thumbUrl: '/events/bear-hug-thumb.jpg',
+      thumbUrl: '/events/check_circle.png',
     },
     {
       id: 1001,
-      name: 'Six Fingers — DJ Set',
+      name: 'Access granted',
       url: '/events/1001',
       date: 'Jun 2, 2024',
       time: '8 PM',
@@ -757,11 +757,11 @@ export async function getEvents() {
       pageViewsChange: '-2.5%',
       status: 'On Sale',
       imgUrl: '/events/six-fingers.jpg',
-      thumbUrl: '/events/six-fingers-thumb.jpg',
+      thumbUrl: '/events/check_circle.png',
     },
     {
       id: 1002,
-      name: 'We All Look The Same',
+      name: 'Access granted',
       url: '/events/1002',
       date: 'Aug 5, 2024',
       time: '4 PM',
@@ -775,11 +775,11 @@ export async function getEvents() {
       pageViewsChange: '-8.0%',
       status: 'Closed',
       imgUrl: '/events/we-all-look-the-same.jpg',
-      thumbUrl: '/events/we-all-look-the-same-thumb.jpg',
+      thumbUrl: '/events/check_circle.png',
     },
     {
       id: 1003,
-      name: 'Viking People',
+      name: 'Denied - Incorrect package',
       url: '/events/1003',
       date: 'Dec 31, 2024',
       time: '8 PM',
@@ -793,7 +793,7 @@ export async function getEvents() {
       pageViewsChange: '-0.15%',
       status: 'On Sale',
       imgUrl: '/events/viking-people.jpg',
-      thumbUrl: '/events/viking-people-thumb.jpg',
+      thumbUrl: '/events/cancel.png',
     },
   ]
 }

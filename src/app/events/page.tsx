@@ -21,24 +21,24 @@ export default async function Events() {
     <>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="max-sm:w-full sm:flex-1">
-          <Heading>Kelvin</Heading>
+          <Heading>Members</Heading>
           <div className="mt-4 flex max-w-xl gap-4">
             <div className="flex-1">
               <InputGroup>
                 <MagnifyingGlassIcon />
-                <Input name="search" placeholder="Search events&hellip;" />
+                <Input name="search" placeholder="Search members&hellip;" />
               </InputGroup>
             </div>
             <div>
               <Select name="sort_by">
                 <option value="name">Sort by name</option>
-                <option value="date">Sort by date</option>
+                <option value="date">Sort by membership date</option>
                 <option value="status">Sort by status</option>
               </Select>
             </div>
           </div>
         </div>
-        <Button>Create event</Button>
+        {/* <Button>Create event</Button> */}
       </div>
       <ul className="mt-10">
         {events.map((event, index) => (
@@ -59,7 +59,7 @@ export default async function Events() {
                     {event.date} at {event.time} <span aria-hidden="true">·</span> {event.location}
                   </div>
                   <div className="text-xs/6 text-zinc-600">
-                    {event.ticketsSold}/{event.ticketsAvailable} tickets sold
+                    {event.ticketsSold}/{event.ticketsAvailable} total visits
                   </div>
                 </div>
               </div>
@@ -72,9 +72,9 @@ export default async function Events() {
                     <EllipsisVerticalIcon />
                   </DropdownButton>
                   <DropdownMenu anchor="bottom end">
-                    <DropdownItem href={event.url}>View</DropdownItem>
-                    <DropdownItem>Edit</DropdownItem>
-                    <DropdownItem>Delete</DropdownItem>
+                    <DropdownItem href={event.url}>Register visit</DropdownItem>
+                    <DropdownItem>Approve visit</DropdownItem>
+                    <DropdownItem>Suspend</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </div>

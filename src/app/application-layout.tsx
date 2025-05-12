@@ -23,7 +23,7 @@ import {
 } from '@/components/sidebar'
 import { SidebarLayout } from '@/components/sidebar-layout'
 import { getEvents } from '@/data'
-import { BuildingLibraryIcon, ChartBarIcon, FolderIcon } from '@heroicons/react/16/solid'
+import { BuildingLibraryIcon, ChartBarIcon, FolderIcon, PresentationChartBarIcon, UserGroupIcon } from '@heroicons/react/16/solid'
 import {
   ArrowRightStartOnRectangleIcon,
   ChevronDownIcon,
@@ -129,12 +129,12 @@ export function ApplicationLayout({
           <SidebarBody>
             <SidebarSection>
               <SidebarItem href="/" current={pathname === '/'}>
-                <FolderIcon />
+                <PresentationChartBarIcon />
                 <SidebarLabel>Dashboard</SidebarLabel>
               </SidebarItem>
               <SidebarItem href="/events" current={pathname.startsWith('/events')}>
-                <BuildingLibraryIcon />
-                <SidebarLabel>Facilities</SidebarLabel>
+                <UserGroupIcon />
+                <SidebarLabel>Members</SidebarLabel>
               </SidebarItem>
               <SidebarItem href="/orders" current={pathname.startsWith('/orders')}>
                 <ChartBarIcon />
