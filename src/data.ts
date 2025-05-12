@@ -738,7 +738,7 @@ export async function getEvents() {
       pageViews: '24,300',
       pageViewsChange: '-0.75%',
       status: 'On Sale',
-      imgUrl: '/events/bear-hug.jpg',
+      imgUrl: '/events/Sarah.png',
       thumbUrl: '/events/check_circle.png',
     },
     {
@@ -756,7 +756,7 @@ export async function getEvents() {
       pageViews: '57,544',
       pageViewsChange: '-2.5%',
       status: 'On Sale',
-      imgUrl: '/events/six-fingers.jpg',
+      imgUrl: '/events/Tamanah.png',
       thumbUrl: '/events/check_circle.png',
     },
     {
@@ -774,7 +774,7 @@ export async function getEvents() {
       pageViews: '122,122',
       pageViewsChange: '-8.0%',
       status: 'Closed',
-      imgUrl: '/events/we-all-look-the-same.jpg',
+      imgUrl: '/events/Michael.png',
       thumbUrl: '/events/check_circle.png',
     },
     {
@@ -792,7 +792,7 @@ export async function getEvents() {
       pageViews: '9,000',
       pageViewsChange: '-0.15%',
       status: 'On Sale',
-      imgUrl: '/events/viking-people.jpg',
+      imgUrl: '/events/Michelle.png',
       thumbUrl: '/events/cancel.png',
     },
   ]
