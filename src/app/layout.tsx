@@ -21,8 +21,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className="text-zinc-950 antialiased lg:bg-zinc-100 dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950"
     >
       <head>
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <ApplicationLayout events={events}>{children}</ApplicationLayout>

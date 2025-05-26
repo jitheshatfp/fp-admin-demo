@@ -999,24 +999,6 @@ const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__W
 
 /***/ }),
 
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/checkbox/checkbox.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/checkbox/checkbox.js ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Checkbox: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/checkbox/checkbox.js#Checkbox`);
-
-
-/***/ }),
-
 /***/ "(rsc)/./node_modules/@headlessui/react/dist/components/data-interactive/data-interactive.js":
 /*!*********************************************************************************************!*\
   !*** ./node_modules/@headlessui/react/dist/components/data-interactive/data-interactive.js ***!
@@ -1035,129 +1017,6 @@ const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__W
 
 /***/ }),
 
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/description/description.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/description/description.js ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Description: () => (/* binding */ e0),
-/* harmony export */   useDescribedBy: () => (/* binding */ e1),
-/* harmony export */   useDescriptions: () => (/* binding */ e2)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/description/description.js#Description`);
-
-const e1 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/description/description.js#useDescribedBy`);
-
-const e2 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/description/description.js#useDescriptions`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/field/field.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/field/field.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Field: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/field/field.js#Field`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/fieldset/fieldset.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/fieldset/fieldset.js ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Fieldset: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/fieldset/fieldset.js#Fieldset`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/input/input.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/input/input.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Input: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/input/input.js#Input`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/label/label.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/label/label.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Label: () => (/* binding */ e0),
-/* harmony export */   useLabelContext: () => (/* binding */ e1),
-/* harmony export */   useLabelledBy: () => (/* binding */ e2),
-/* harmony export */   useLabels: () => (/* binding */ e3)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/label/label.js#Label`);
-
-const e1 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/label/label.js#useLabelContext`);
-
-const e2 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/label/label.js#useLabelledBy`);
-
-const e3 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/label/label.js#useLabels`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/legend/legend.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/legend/legend.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Legend: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/legend/legend.js#Legend`);
-
-
-/***/ }),
-
 /***/ "(rsc)/./node_modules/@headlessui/react/dist/components/select/select.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/@headlessui/react/dist/components/select/select.js ***!
@@ -1172,24 +1031,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/select/select.js#Select`);
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@headlessui/react/dist/components/textarea/textarea.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@headlessui/react/dist/components/textarea/textarea.js ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Textarea: () => (/* binding */ e0)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-
-const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/jithesh/Developer/fp-admin-demo/node_modules/@headlessui/react/dist/components/textarea/textarea.js#Textarea`);
 
 
 /***/ })
