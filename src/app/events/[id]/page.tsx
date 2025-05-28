@@ -41,7 +41,7 @@ export default async function Event({ params }: { params: { id: string } }) {
           <div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <Heading>{event.name}</Heading>
-              <Badge color={event.status === 'On Sale' ? 'lime' : 'zinc'}>{event.status}</Badge>
+              <Badge color={event.status === 'Active' ? 'lime' : 'zinc'}>{event.status}</Badge>
             </div>
             <div className="mt-2 text-sm/6 text-zinc-500">
               {event.date} at {event.time} <span aria-hidden="true">·</span> {event.location}

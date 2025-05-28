@@ -64,7 +64,7 @@ export default async function Events() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Badge className="max-sm:hidden" color={event.status === 'On Sale' ? 'lime' : 'zinc'}>
+                <Badge className="max-sm:hidden" color={event.status === 'Active' ? 'lime' : 'zinc'}>
                   {event.status}
                 </Badge>
                 <Dropdown>
