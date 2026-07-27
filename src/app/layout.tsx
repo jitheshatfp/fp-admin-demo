@@ -1,4 +1,3 @@
-import { getEvents } from '@/data'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import type React from 'react'
@@ -6,15 +5,13 @@ import { ApplicationLayout } from './application-layout'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Catalyst',
-    default: 'Catalyst',
+    template: '%s - Fitness Passport',
+    default: 'Fitness Passport',
   },
   description: '',
 }
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  let events = await getEvents()
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -24,12 +21,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
-        <ApplicationLayout events={events}>{children}</ApplicationLayout>
+        <ApplicationLayout>{children}</ApplicationLayout>
       </body>
     </html>
   )

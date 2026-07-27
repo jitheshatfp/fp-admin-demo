@@ -9,7 +9,7 @@ import {
   DropdownLabel,
   DropdownMenu,
 } from '@/components/dropdown'
-import { Navbar, NavbarItem, NavbarSection, NavbarSpacer } from '@/components/navbar'
+import { Navbar, NavbarItem, NavbarLabel, NavbarSection, NavbarSpacer } from '@/components/navbar'
 import {
   Sidebar,
   SidebarBody,
@@ -22,33 +22,35 @@ import {
   SidebarSpacer,
 } from '@/components/sidebar'
 import { SidebarLayout } from '@/components/sidebar-layout'
-import { getEvents } from '@/data'
-import { BuildingLibraryIcon, ChartBarIcon, FolderIcon, PresentationChartBarIcon, UserGroupIcon } from '@heroicons/react/16/solid'
+import { ViewFacilitiesModal } from '@/components/portal/modals/view-facilities-modal'
+import { FAMILY } from '@/data-portal'
 import {
   ArrowRightStartOnRectangleIcon,
+  BellIcon,
   ChevronDownIcon,
   ChevronUpIcon,
-  Cog8ToothIcon,
-  LightBulbIcon,
-  PlusIcon,
+  QrCodeIcon,
   ShieldCheckIcon,
   UserCircleIcon,
-  UserIcon,
 } from '@heroicons/react/16/solid'
 import {
-  Cog6ToothIcon,
-  HomeIcon,
+  ArrowsRightLeftIcon,
+  BanknotesIcon,
+  CreditCardIcon,
+  DocumentTextIcon,
+  PauseCircleIcon,
+  PhotoIcon,
+  PresentationChartBarIcon,
   QuestionMarkCircleIcon,
-  SparklesIcon,
-  Square2StackIcon,
-  TicketIcon,
+  UserGroupIcon,
 } from '@heroicons/react/20/solid'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 function AccountDropdownMenu({ anchor }: { anchor: 'top start' | 'bottom end' }) {
   return (
     <DropdownMenu className="min-w-64" anchor={anchor}>
-      <DropdownItem href="#">
+      <DropdownItem href="/member">
         <UserCircleIcon />
         <DropdownLabel>My account</DropdownLabel>
       </DropdownItem>
@@ -57,10 +59,6 @@ function AccountDropdownMenu({ anchor }: { anchor: 'top start' | 'bottom end' })
         <ShieldCheckIcon />
         <DropdownLabel>Privacy policy</DropdownLabel>
       </DropdownItem>
-      {/* <DropdownItem href="#">
-        <LightBulbIcon />
-        <DropdownLabel>Share feedback</DropdownLabel>
-      </DropdownItem> */}
       <DropdownDivider />
       <DropdownItem href="#">
         <ArrowRightStartOnRectangleIcon />
@@ -70,14 +68,10 @@ function AccountDropdownMenu({ anchor }: { anchor: 'top start' | 'bottom end' })
   )
 }
 
-export function ApplicationLayout({
-  events,
-  children,
-}: {
-  events: Awaited<ReturnType<typeof getEvents>>
-  children: React.ReactNode
-}) {
+export function ApplicationLayout({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
+  let user = FAMILY[0]
+  let [cardOpen, setCardOpen] = useState(false)
 
   return (
     <SidebarLayout
@@ -85,9 +79,16 @@ export function ApplicationLayout({
         <Navbar>
           <NavbarSpacer />
           <NavbarSection>
+            <NavbarItem href="/notifications" aria-label="Notifications">
+              <BellIcon />
+            </NavbarItem>
+            <NavbarItem onClick={() => setCardOpen(true)}>
+              <QrCodeIcon />
+              <NavbarLabel>My card</NavbarLabel>
+            </NavbarItem>
             <Dropdown>
               <DropdownButton as={NavbarItem}>
-                <Avatar src="/users/erica.jpg" square />
+                <Avatar src={user.photo} square />
               </DropdownButton>
               <AccountDropdownMenu anchor="bottom end" />
             </Dropdown>
@@ -104,23 +105,14 @@ export function ApplicationLayout({
                 <ChevronDownIcon />
               </DropdownButton>
               <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start">
-                <DropdownItem href="/settings">
-                  <Cog8ToothIcon />
-                  <DropdownLabel>Settings</DropdownLabel>
+                <DropdownItem href="/security">
+                  <ShieldCheckIcon />
+                  <DropdownLabel>Security</DropdownLabel>
                 </DropdownItem>
                 <DropdownDivider />
-                <DropdownItem href="#">
-                  <Avatar slot="icon" src="/teams/catalyst.svg" />
-                  <DropdownLabel>Admin</DropdownLabel>
-                </DropdownItem>
-                {/* <DropdownItem href="#">
-                  <Avatar slot="icon" initials="BE" className="bg-purple-500 text-white" />
-                  <DropdownLabel>Big Events</DropdownLabel>
-                </DropdownItem> */}
-                <DropdownDivider />
-                <DropdownItem href="#">
-                  <UserIcon/>
-                  <DropdownLabel>Staff</DropdownLabel>
+                <DropdownItem href="/support">
+                  <QuestionMarkCircleIcon />
+                  <DropdownLabel>Support</DropdownLabel>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
@@ -128,43 +120,64 @@ export function ApplicationLayout({
 
           <SidebarBody>
             <SidebarSection>
+              <SidebarHeading>Home</SidebarHeading>
               <SidebarItem href="/" current={pathname === '/'}>
                 <PresentationChartBarIcon />
                 <SidebarLabel>Dashboard</SidebarLabel>
               </SidebarItem>
-              <SidebarItem href="/events" current={pathname.startsWith('/events')}>
+              <SidebarItem href="/member" current={pathname.startsWith('/member')}>
                 <UserGroupIcon />
-                <SidebarLabel>Members</SidebarLabel>
-              </SidebarItem>
-              <SidebarItem href="/orders" current={pathname.startsWith('/orders')}>
-                <ChartBarIcon />
-                <SidebarLabel>Reports</SidebarLabel>
-              </SidebarItem>
-              <SidebarItem href="/settings" current={pathname.startsWith('/settings')}>
-                <Cog6ToothIcon />
-                <SidebarLabel>Settings</SidebarLabel>
+                <SidebarLabel>Member Details</SidebarLabel>
               </SidebarItem>
             </SidebarSection>
 
-            {/* <SidebarSection className="max-lg:hidden">
-              <SidebarHeading>Upcoming Reports</SidebarHeading>
-              {events.map((event) => (
-                <SidebarItem key={event.id} href={event.url}>
-                  {event.name}
-                </SidebarItem>
-              ))}
-            </SidebarSection> */}
+            <SidebarSection>
+              <SidebarHeading>Manage Membership</SidebarHeading>
+              <SidebarItem href="/photos" current={pathname.startsWith('/photos')}>
+                <PhotoIcon />
+                <SidebarLabel>Membership Photos</SidebarLabel>
+              </SidebarItem>
+              <SidebarItem href="/suspend" current={pathname.startsWith('/suspend')}>
+                <PauseCircleIcon />
+                <SidebarLabel>Suspend Membership</SidebarLabel>
+              </SidebarItem>
+              <SidebarItem href="/transfer" current={pathname.startsWith('/transfer')}>
+                <ArrowsRightLeftIcon />
+                <SidebarLabel>Employer Transfer</SidebarLabel>
+              </SidebarItem>
+            </SidebarSection>
+
+            <SidebarSection>
+              <SidebarHeading>Payments &amp; Contracts</SidebarHeading>
+              <SidebarItem href="/payments" current={pathname.startsWith('/payments')}>
+                <BanknotesIcon />
+                <SidebarLabel>Payment History</SidebarLabel>
+              </SidebarItem>
+              <SidebarItem href="/contracts" current={pathname.startsWith('/contracts')}>
+                <DocumentTextIcon />
+                <SidebarLabel>Contracts</SidebarLabel>
+              </SidebarItem>
+              <SidebarItem href="/debit" current={pathname.startsWith('/debit')}>
+                <CreditCardIcon />
+                <SidebarLabel>Direct Debit</SidebarLabel>
+              </SidebarItem>
+            </SidebarSection>
 
             <SidebarSpacer />
 
             <SidebarSection>
-              <SidebarItem href="#">
-                <QuestionMarkCircleIcon />
-                <SidebarLabel>Support</SidebarLabel>
+              <SidebarHeading>Account</SidebarHeading>
+              <SidebarItem href="/notifications" current={pathname.startsWith('/notifications')}>
+                <BellIcon />
+                <SidebarLabel>Notifications</SidebarLabel>
               </SidebarItem>
-              <SidebarItem href="#">
-                <SparklesIcon />
-                <SidebarLabel>Changelog</SidebarLabel>
+              <SidebarItem href="/security" current={pathname.startsWith('/security')}>
+                <ShieldCheckIcon />
+                <SidebarLabel>Security</SidebarLabel>
+              </SidebarItem>
+              <SidebarItem href="/support" current={pathname.startsWith('/support')}>
+                <QuestionMarkCircleIcon />
+                <SidebarLabel>Customer Support</SidebarLabel>
               </SidebarItem>
             </SidebarSection>
           </SidebarBody>
@@ -173,11 +186,13 @@ export function ApplicationLayout({
             <Dropdown>
               <DropdownButton as={SidebarItem}>
                 <span className="flex min-w-0 items-center gap-3">
-                  <Avatar src="/users/erica.jpg" className="size-10" square alt="" />
+                  <Avatar src={user.photo} className="size-10" square alt="" />
                   <span className="min-w-0">
-                    <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">Erica</span>
+                    <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">
+                      {user.name}
+                    </span>
                     <span className="block truncate text-xs/5 font-normal text-zinc-500 dark:text-zinc-400">
-                      Administrator
+                      Member #{user.memberNumber}
                     </span>
                   </span>
                 </span>
@@ -190,6 +205,7 @@ export function ApplicationLayout({
       }
     >
       {children}
+      <ViewFacilitiesModal open={cardOpen} onClose={() => setCardOpen(false)} />
     </SidebarLayout>
   )
 }

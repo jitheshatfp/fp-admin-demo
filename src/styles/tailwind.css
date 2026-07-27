@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: Inter, sans-serif;
+  --font-sans: Onest, Inter, sans-serif;
   --font-sans--font-feature-settings: 'cv11';
+
+  --color-fp-blue: #2388f1;
+  --color-fp-blue-deep: #0e2a47;
+  --color-fp-blue-mid: #5ba9f5;
 }
