@@ -28,7 +28,7 @@ export function SecurityScreen() {
   const { toasts, addToast } = usePortalToasts()
   const [method, setMethod] = useState<'email' | 'sms' | 'app'>('sms')
   const [phone, setPhone] = useState('+61 450 722 733')
-  const [email, setEmail] = useState('jithesh@fitnesspassport.com.au')
+  const [email, setEmail] = useState('marcus.delgado@example.com')
   const [dirty, setDirty] = useState(false)
   const [verify, setVerify] = useState<{ method: string; destination: string } | null>(null)
 

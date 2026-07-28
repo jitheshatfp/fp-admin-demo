@@ -108,7 +108,7 @@ export function EditMemberModal({
           <div className="mt-4 grid grid-cols-3 gap-4">
             <Field>
               <Label>Name</Label>
-              <Input defaultValue="Sharon Hall" />
+              <Input defaultValue="Priya Delgado" />
             </Field>
             <Field>
               <Label>Relationship</Label>

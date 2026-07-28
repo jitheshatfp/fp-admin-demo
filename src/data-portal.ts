@@ -14,9 +14,9 @@ export type Member = {
 export const FAMILY: Member[] = [
   {
     id: 1,
-    firstName: 'Jithesh',
-    lastName: 'Ramesh',
-    name: 'Jithesh Ramesh',
+    firstName: 'Marcus',
+    lastName: 'Delgado',
+    name: 'Marcus Delgado',
     role: 'Primary',
     status: 'Active',
     memberNumber: '335',
@@ -26,9 +26,9 @@ export const FAMILY: Member[] = [
   },
   {
     id: 2,
-    firstName: 'Sharon',
-    lastName: 'Hall',
-    name: 'Sharon Hall',
+    firstName: 'Priya',
+    lastName: 'Delgado',
+    name: 'Priya Delgado',
     role: 'Partner',
     status: 'Active',
     memberNumber: '335.2',
@@ -38,9 +38,9 @@ export const FAMILY: Member[] = [
   },
   {
     id: 3,
-    firstName: 'Angelina',
-    lastName: 'Jithesh',
-    name: 'Angelina Jithesh',
+    firstName: 'Isla',
+    lastName: 'Delgado',
+    name: 'Isla Delgado',
     role: 'Dependant',
     status: 'Active',
     memberNumber: '335.3',
@@ -50,9 +50,9 @@ export const FAMILY: Member[] = [
   },
   {
     id: 4,
-    firstName: 'Anoushka',
-    lastName: 'Jithesh',
-    name: 'Anoushka Jithesh',
+    firstName: 'Noah',
+    lastName: 'Delgado',
+    name: 'Noah Delgado',
     role: 'Dependant',
     status: 'Active',
     memberNumber: '335.1',
@@ -63,10 +63,10 @@ export const FAMILY: Member[] = [
 ]
 
 export const RECENT_VISITS = [
-  { who: 'Jithesh', facility: 'Goodlife Health Club — Sandringham', when: 'Today, 6:42 AM' },
-  { who: 'Sharon', facility: 'Bayside Aquatic Centre', when: 'Yesterday, 5:30 PM' },
-  { who: 'Jithesh', facility: 'Fitness First — Bourke St', when: 'Mon, 19 May, 7:15 AM' },
-  { who: 'Anoushka', facility: 'YMCA — Aspendale Gardens', when: 'Sat, 17 May, 10:02 AM' },
+  { who: 'Marcus', facility: 'Goodlife Health Club — Sandringham', when: 'Today, 6:42 AM' },
+  { who: 'Priya', facility: 'Bayside Aquatic Centre', when: 'Yesterday, 5:30 PM' },
+  { who: 'Marcus', facility: 'Fitness First — Bourke St', when: 'Mon, 19 May, 7:15 AM' },
+  { who: 'Noah', facility: 'YMCA — Aspendale Gardens', when: 'Sat, 17 May, 10:02 AM' },
 ]
 
 export const NOTIFICATIONS = [
