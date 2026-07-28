@@ -55,7 +55,7 @@ export function EditMemberModal({
               </Field>
               <Field>
                 <Label>Date of Birth</Label>
-                <Input type="date" defaultValue="1980-08-09" />
+                <Input type="date" defaultValue="1987-11-24" />
               </Field>
               <Field>
                 <Label>Membership Status</Label>
