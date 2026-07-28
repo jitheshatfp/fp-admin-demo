@@ -26,24 +26,22 @@ import { ViewFacilitiesModal } from '@/components/portal/modals/view-facilities-
 import { FAMILY } from '@/data-portal'
 import {
   ArrowRightStartOnRectangleIcon,
+  ArrowsRightLeftIcon,
+  BanknotesIcon,
   BellIcon,
   ChevronDownIcon,
   ChevronUpIcon,
-  QrCodeIcon,
-  ShieldCheckIcon,
-  UserCircleIcon,
-} from '@heroicons/react/16/solid'
-import {
-  ArrowsRightLeftIcon,
-  BanknotesIcon,
   CreditCardIcon,
   DocumentTextIcon,
   PauseCircleIcon,
   PhotoIcon,
   PresentationChartBarIcon,
+  QrCodeIcon,
   QuestionMarkCircleIcon,
+  ShieldCheckIcon,
+  UserCircleIcon,
   UserGroupIcon,
-} from '@heroicons/react/20/solid'
+} from '@/components/material-icons'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 

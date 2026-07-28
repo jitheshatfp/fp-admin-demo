@@ -20,7 +20,7 @@ import {
   PaperAirplaneIcon,
   PauseCircleIcon,
   ReceiptPercentIcon,
-} from '@heroicons/react/16/solid'
+} from '@/components/material-icons'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 

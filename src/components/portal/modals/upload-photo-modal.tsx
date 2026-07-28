@@ -3,7 +3,7 @@
 import { Button } from '@/components/button'
 import { Dialog, DialogActions, DialogBody, DialogTitle } from '@/components/dialog'
 import type { Member } from '@/data-portal'
-import { ArrowUpTrayIcon } from '@heroicons/react/16/solid'
+import { ArrowUpTrayIcon } from '@/components/material-icons'
 import { useState } from 'react'
 
 export function UploadPhotoModal({

@@ -5,7 +5,7 @@ import { Field, Label } from '@/components/fieldset'
 import { Input } from '@/components/input'
 import { PageHero, SectionHeader } from '@/components/portal/portal-ui'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
-import { CheckIcon, PencilIcon, ShieldCheckIcon } from '@heroicons/react/16/solid'
+import { CheckIcon, PencilIcon, ShieldCheckIcon } from '@/components/material-icons'
 import { useState } from 'react'
 
 const UPCOMING = [

@@ -4,7 +4,7 @@ import { Badge } from '@/components/badge'
 import { Button } from '@/components/button'
 import { Dialog, DialogActions, DialogBody, DialogTitle } from '@/components/dialog'
 import { Input, InputGroup } from '@/components/input'
-import { FunnelIcon, MagnifyingGlassIcon, StarIcon } from '@heroicons/react/16/solid'
+import { FunnelIcon, MagnifyingGlassIcon, StarIcon } from '@/components/material-icons'
 
 const FACILITIES = [
   { name: 'Fitness First — Bourke St', type: 'Premium Gym', distance: '0.4 km', open: true },

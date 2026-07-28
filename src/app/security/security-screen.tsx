@@ -10,13 +10,13 @@ import { Radio, RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 import {
   CheckCircleIcon,
+  ComputerDesktopIcon,
   DevicePhoneMobileIcon,
   EnvelopeIcon,
   KeyIcon,
   PaperAirplaneIcon,
   ShieldCheckIcon,
-} from '@heroicons/react/16/solid'
-import { ComputerDesktopIcon } from '@heroicons/react/20/solid'
+} from '@/components/material-icons'
 import { useState } from 'react'
 
 const SESSIONS = [

@@ -3,7 +3,7 @@
 import { Button } from '@/components/button'
 import { PageHero } from '@/components/portal/portal-ui'
 import { NOTIFICATIONS } from '@/data-portal'
-import { CheckBadgeIcon, CheckCircleIcon, CreditCardIcon } from '@heroicons/react/16/solid'
+import { CheckBadgeIcon, CheckCircleIcon, CreditCardIcon } from '@/components/material-icons'
 import clsx from 'clsx'
 import { useState } from 'react'
 

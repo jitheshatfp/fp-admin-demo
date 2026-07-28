@@ -5,7 +5,7 @@ import { Button } from '@/components/button'
 import { Input } from '@/components/input'
 import { PageHero, SectionHeader } from '@/components/portal/portal-ui'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
-import { ArrowDownTrayIcon, DocumentTextIcon, InformationCircleIcon } from '@heroicons/react/16/solid'
+import { ArrowDownTrayIcon, DocumentTextIcon, InformationCircleIcon } from '@/components/material-icons'
 
 export function ContractsScreen() {
   const { toasts, addToast } = usePortalToasts()

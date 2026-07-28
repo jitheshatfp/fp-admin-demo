@@ -10,7 +10,7 @@ import { Detail, PageHero, SectionHeader } from '@/components/portal/portal-ui'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/table'
 import { FAMILY, type Member } from '@/data-portal'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
-import { CheckIcon, MapPinIcon, PencilIcon, ArrowPathIcon, UserPlusIcon } from '@heroicons/react/16/solid'
+import { CheckIcon, MapPinIcon, PencilIcon, ArrowPathIcon, UserPlusIcon } from '@/components/material-icons'
 import Image from 'next/image'
 import { useState } from 'react'
 

@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { CheckIcon } from '@heroicons/react/16/solid'
+import { CheckIcon } from '@/components/material-icons'
 import type { ComponentType, ReactNode, SVGProps } from 'react'
 
 type IconType = ComponentType<SVGProps<SVGSVGElement>>

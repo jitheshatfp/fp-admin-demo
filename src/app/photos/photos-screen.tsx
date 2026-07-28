@@ -8,7 +8,7 @@ import { PageHero } from '@/components/portal/portal-ui'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/table'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
 import { FAMILY, type Member } from '@/data-portal'
-import { ArrowUpTrayIcon, CubeIcon, NoSymbolIcon } from '@heroicons/react/16/solid'
+import { ArrowUpTrayIcon, CubeIcon, NoSymbolIcon } from '@/components/material-icons'
 import Image from 'next/image'
 import { useState } from 'react'
 

@@ -12,13 +12,13 @@ import {
   ChevronRightIcon,
   CreditCardIcon,
   EnvelopeIcon,
+  PaperAirplaneIcon,
   PaperClipIcon,
   PauseCircleIcon,
   PhoneIcon,
   PhotoIcon,
   QuestionMarkCircleIcon,
-} from '@heroicons/react/16/solid'
-import { PaperAirplaneIcon } from '@heroicons/react/20/solid'
+} from '@/components/material-icons'
 import { useState } from 'react'
 
 const ARTICLES = [

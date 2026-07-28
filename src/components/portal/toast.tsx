@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircleIcon } from '@heroicons/react/16/solid'
+import { CheckCircleIcon } from '@/components/material-icons'
 import { useCallback, useState } from 'react'
 
 type Toast = { id: number; text: string }

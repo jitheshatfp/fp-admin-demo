@@ -14,7 +14,7 @@ import {
   CreditCardIcon,
   ArrowPathIcon,
   MagnifyingGlassIcon,
-} from '@heroicons/react/16/solid'
+} from '@/components/material-icons'
 
 export function PaymentsScreen() {
   const { toasts, addToast } = usePortalToasts()

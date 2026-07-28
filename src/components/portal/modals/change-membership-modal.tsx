@@ -4,7 +4,7 @@ import { Badge } from '@/components/badge'
 import { Button } from '@/components/button'
 import { Dialog, DialogActions, DialogBody, DialogTitle } from '@/components/dialog'
 import clsx from 'clsx'
-import { CheckIcon, XMarkIcon } from '@heroicons/react/16/solid'
+import { CheckIcon, XMarkIcon } from '@/components/material-icons'
 
 const TIERS = [
   {
