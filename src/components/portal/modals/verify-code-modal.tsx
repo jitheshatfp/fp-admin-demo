@@ -51,6 +51,7 @@ export function VerifyCodeModal({
               onKeyDown={(e) => handleKey(i, e)}
               maxLength={1}
               inputMode="numeric"
+              aria-label={`Verification code digit ${i + 1} of 6`}
               className="size-11 rounded-lg border border-zinc-950/10 bg-transparent text-center text-lg font-bold text-zinc-950 focus:border-fp-blue focus:ring-2 focus:ring-fp-blue/30 focus:outline-none dark:border-white/10 dark:bg-white/5 dark:text-white"
             />
           ))}

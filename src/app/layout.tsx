@@ -1,7 +1,15 @@
 import '@/styles/tailwind.css'
 import type { Metadata, Viewport } from 'next'
+import { Onest } from 'next/font/google'
 import type React from 'react'
 import { ApplicationLayout } from './application-layout'
+
+const onest = Onest({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-onest',
+  display: 'swap',
+})
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
 const DESCRIPTION = 'Manage your Fitness Passport membership, visits, and payments.'
@@ -40,16 +48,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className="text-zinc-950 antialiased lg:bg-zinc-100 dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950"
+      className={`${onest.variable} text-zinc-950 antialiased lg:bg-zinc-100 dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950`}
     >
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body>
         <ApplicationLayout>{children}</ApplicationLayout>
       </body>

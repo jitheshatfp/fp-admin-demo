@@ -11,6 +11,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { FAMILY, type Member } from '@/data-portal'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
 import { CheckIcon, MapPinIcon, PencilIcon, ArrowPathIcon, UserPlusIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export function MemberDetailsScreen() {
@@ -40,7 +41,9 @@ export function MemberDetailsScreen() {
               <TableHeader>Member #</TableHeader>
               <TableHeader>Status</TableHeader>
               <TableHeader>Card</TableHeader>
-              <TableHeader></TableHeader>
+              <TableHeader>
+                <span className="sr-only">Actions</span>
+              </TableHeader>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -48,7 +51,13 @@ export function MemberDetailsScreen() {
               <TableRow key={m.id}>
                 <TableCell>
                   <div className="flex items-center gap-2">
-                    <img src={m.photo} alt="" className="size-7.5 flex-none rounded-full object-cover" />
+                    <Image
+                      src={m.photo}
+                      alt=""
+                      width={30}
+                      height={30}
+                      className="size-7.5 flex-none rounded-full object-cover"
+                    />
                     <div>
                       <div className="font-semibold text-zinc-950 dark:text-white">{m.name}</div>
                       <div className="text-xs text-zinc-500 dark:text-zinc-400">FPT.{m.memberNumber}</div>

@@ -51,7 +51,7 @@ export function TransferScreen() {
 
         {step === 0 && (
           <div>
-            <h3 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">New employer details</h3>
+            <h2 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">New employer details</h2>
             <div className="grid grid-cols-2 gap-3">
               <Field>
                 <Label>Employee / Payroll #</Label>
@@ -100,7 +100,7 @@ export function TransferScreen() {
 
         {step === 1 && (
           <div>
-            <h3 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Pick your membership package</h3>
+            <h2 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Pick your membership package</h2>
             <div className="grid grid-cols-3 gap-3">
               {PLANS.map((p) => {
                 const sel = plan === p.id
@@ -170,7 +170,7 @@ export function TransferScreen() {
 
         {step === 2 && (
           <div>
-            <h3 className="mt-0 mb-1 text-base font-bold text-zinc-950 dark:text-white">Direct debit details</h3>
+            <h2 className="mt-0 mb-1 text-base font-bold text-zinc-950 dark:text-white">Direct debit details</h2>
             <p className="mt-0 mb-3 text-sm text-zinc-500 dark:text-zinc-400">Your billing transfers seamlessly — no missed payments.</p>
             <div className="grid grid-cols-2 gap-3">
               <Field>

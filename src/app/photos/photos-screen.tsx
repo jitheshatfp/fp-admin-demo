@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
 import { FAMILY, type Member } from '@/data-portal'
 import { ArrowUpTrayIcon, CubeIcon, NoSymbolIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export function PhotosScreen() {
@@ -50,7 +51,13 @@ export function PhotosScreen() {
                   <Badge color="green">Active</Badge>
                 </TableCell>
                 <TableCell>
-                  <img src={m.photo} alt="" className="h-17.5 w-14 rounded-lg border border-zinc-950/10 object-cover dark:border-white/10" />
+                  <Image
+                    src={m.photo}
+                    alt=""
+                    width={56}
+                    height={70}
+                    className="h-17.5 w-14 rounded-lg border border-zinc-950/10 object-cover dark:border-white/10"
+                  />
                 </TableCell>
                 <TableCell>
                   <div className="flex gap-2">

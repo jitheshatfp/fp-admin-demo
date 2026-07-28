@@ -79,7 +79,7 @@ export function DirectDebitScreen() {
         </div>
 
         <div className="rounded-xl border border-zinc-950/10 bg-white p-5 dark:border-white/10 dark:bg-zinc-900">
-          <h4 className="mt-0 mb-3 text-sm font-bold text-zinc-950 dark:text-white">Upcoming charges</h4>
+          <h2 className="mt-0 mb-3 text-sm font-bold text-zinc-950 dark:text-white">Upcoming charges</h2>
           <div className="grid gap-2.5">
             {UPCOMING.map((u, i) => (
               <div

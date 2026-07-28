@@ -19,13 +19,13 @@ export function ContractsScreen() {
           <SectionHeader title="Contract details" />
           <div className="grid grid-cols-[180px_1fr] items-center gap-3.5">
             <span className="text-sm text-zinc-500 dark:text-zinc-400">Minimum contract duration</span>
-            <Input value="12 months" disabled />
+            <Input aria-label="Minimum contract duration" value="12 months" disabled />
 
             <span className="text-sm text-zinc-500 dark:text-zinc-400">Contract start date</span>
-            <Input value="26 Oct 2025" disabled />
+            <Input aria-label="Contract start date" value="26 Oct 2025" disabled />
 
             <span className="text-sm text-zinc-500 dark:text-zinc-400">Contract end date</span>
-            <Input value="26 Oct 2026" disabled />
+            <Input aria-label="Contract end date" value="26 Oct 2026" disabled />
 
             <span className="text-sm text-zinc-500 dark:text-zinc-400">Auto-renew</span>
             <div className="flex items-center gap-2">
@@ -45,7 +45,7 @@ export function ContractsScreen() {
 
         <div className="rounded-xl bg-fp-blue/10 p-5">
           <InformationCircleIcon className="size-5 text-fp-blue" />
-          <h4 className="mt-2 mb-1 text-sm font-bold text-zinc-950 dark:text-white">Cancel anytime after your term</h4>
+          <h2 className="mt-2 mb-1 text-sm font-bold text-zinc-950 dark:text-white">Cancel anytime after your term</h2>
           <p className="mt-0 mb-3 text-sm text-zinc-600 dark:text-zinc-300">
             Your contract runs until 26 Oct 2026. After that you&apos;re on a rolling fortnightly cycle — cancel any time with 14
             days notice.

@@ -87,8 +87,8 @@ export function ApplicationLayout({ children }: { children: React.ReactNode }) {
               <NavbarLabel>My card</NavbarLabel>
             </NavbarItem>
             <Dropdown>
-              <DropdownButton as={NavbarItem}>
-                <Avatar src={user.photo} square />
+              <DropdownButton as={NavbarItem} aria-label={`Account menu for ${user.name}`}>
+                <Avatar src={user.photo} square alt="" />
               </DropdownButton>
               <AccountDropdownMenu anchor="bottom end" />
             </Dropdown>
@@ -100,7 +100,7 @@ export function ApplicationLayout({ children }: { children: React.ReactNode }) {
           <SidebarHeader>
             <Dropdown>
               <DropdownButton as={SidebarItem}>
-                <Avatar src="/teams/catalyst.svg" />
+                <Avatar src="/teams/fitness-passport-logo.svg" />
                 <SidebarLabel>Fitness Passport</SidebarLabel>
                 <ChevronDownIcon />
               </DropdownButton>

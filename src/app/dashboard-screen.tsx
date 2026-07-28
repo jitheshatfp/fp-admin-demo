@@ -23,6 +23,7 @@ import {
   TrophyIcon,
   UserGroupIcon,
 } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
@@ -138,7 +139,13 @@ export function DashboardScreen() {
                 key={m.id}
                 className="flex items-center gap-2 rounded-lg border border-zinc-950/10 p-2 dark:border-white/10"
               >
-                <img src={m.photo} alt="" className="size-9 flex-none rounded-full object-cover" />
+                <Image
+                  src={m.photo}
+                  alt=""
+                  width={36}
+                  height={36}
+                  className="size-9 flex-none rounded-full object-cover"
+                />
                 <div className="min-w-0 flex-1">
                   <div className="truncate text-sm font-semibold text-zinc-950 dark:text-white">{m.name}</div>
                   <div className="text-xs text-zinc-500 dark:text-zinc-400">{m.role} · Active</div>

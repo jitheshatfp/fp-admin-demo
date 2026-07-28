@@ -6,6 +6,7 @@ import { Input } from '@/components/input'
 import { VerifyCodeModal } from '@/components/portal/modals/verify-code-modal'
 import { PageHero, SectionHeader } from '@/components/portal/portal-ui'
 import { ToastStack, usePortalToasts } from '@/components/portal/toast'
+import { Radio, RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 import {
   CheckCircleIcon,
@@ -57,62 +58,73 @@ export function SecurityScreen() {
               </Badge>
             }
           />
-          {methods.map((m) => {
-            const sel = method === m.id
-            return (
-              <div
+          <RadioGroup
+            aria-label="Multi-factor authentication method"
+            value={method}
+            onChange={(value) => {
+              setMethod(value)
+              setDirty(true)
+            }}
+          >
+            {methods.map((m) => (
+              <Radio
                 key={m.id}
-                onClick={() => {
-                  setMethod(m.id)
-                  setDirty(true)
-                }}
-                className={clsx(
-                  'mb-2.5 grid cursor-pointer grid-cols-[auto_1fr_auto] items-start gap-3 rounded-xl border-2 p-3.5',
-                  sel ? 'border-fp-blue bg-fp-blue/5' : 'border-zinc-950/10 bg-white dark:border-white/10 dark:bg-zinc-900'
-                )}
+                value={m.id}
+                className={({ checked }) =>
+                  clsx(
+                    'mb-2.5 grid cursor-pointer grid-cols-[auto_1fr_auto] items-start gap-3 rounded-xl border-2 p-3.5',
+                    'focus:outline-hidden data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500',
+                    checked ? 'border-fp-blue bg-fp-blue/5' : 'border-zinc-950/10 bg-white dark:border-white/10 dark:bg-zinc-900'
+                  )
+                }
               >
-                <span
-                  className={clsx(
-                    'mt-0.5 flex size-4.5 items-center justify-center rounded-full border-2',
-                    sel ? 'border-fp-blue bg-fp-blue' : 'border-zinc-950/20 dark:border-white/20'
-                  )}
-                >
-                  {sel && <span className="size-2 rounded-full bg-white" />}
-                </span>
-                <div>
-                  <div className="mb-1 flex items-center gap-2">
-                    <m.icon className={clsx('size-4', sel ? 'text-fp-blue' : 'text-zinc-500 dark:text-zinc-400')} />
-                    <strong className="text-zinc-950 dark:text-white">{m.label}</strong>
-                    {m.recommended && <Badge color="green">Recommended</Badge>}
-                  </div>
-                  <div className="mb-2 text-xs text-zinc-500 dark:text-zinc-400">{m.desc}</div>
-                  {sel && m.id !== 'app' && (
-                    <Input
-                      className="max-w-64"
-                      value={m.id === 'email' ? email : phone}
-                      onChange={(e) => {
-                        if (m.id === 'email') setEmail(e.target.value)
-                        else setPhone(e.target.value)
-                        setDirty(true)
-                      }}
-                    />
-                  )}
-                  {sel && m.id === 'app' && (
-                    <Button
-                      className="text-xs"
-                      onClick={(e: React.MouseEvent) => {
-                        e.stopPropagation()
-                        setVerify({ method: 'authenticator app', destination: 'your device' })
-                      }}
+                {({ checked }) => (
+                  <>
+                    <span
+                      className={clsx(
+                        'mt-0.5 flex size-4.5 items-center justify-center rounded-full border-2',
+                        checked ? 'border-fp-blue bg-fp-blue' : 'border-zinc-950/20 dark:border-white/20'
+                      )}
                     >
-                      Set up authenticator
-                    </Button>
-                  )}
-                </div>
-                <CheckCircleIcon className={clsx('size-4.5', sel ? 'text-fp-blue' : 'text-zinc-300 dark:text-zinc-600')} />
-              </div>
-            )
-          })}
+                      {checked && <span className="size-2 rounded-full bg-white" />}
+                    </span>
+                    <div>
+                      <div className="mb-1 flex items-center gap-2">
+                        <m.icon className={clsx('size-4', checked ? 'text-fp-blue' : 'text-zinc-500 dark:text-zinc-400')} />
+                        <strong className="text-zinc-950 dark:text-white">{m.label}</strong>
+                        {m.recommended && <Badge color="green">Recommended</Badge>}
+                      </div>
+                      <div className="mb-2 text-xs text-zinc-500 dark:text-zinc-400">{m.desc}</div>
+                      {checked && m.id !== 'app' && (
+                        <Input
+                          aria-label={m.id === 'email' ? 'Email address for MFA codes' : 'Phone number for MFA codes'}
+                          className="max-w-64"
+                          value={m.id === 'email' ? email : phone}
+                          onChange={(e) => {
+                            if (m.id === 'email') setEmail(e.target.value)
+                            else setPhone(e.target.value)
+                            setDirty(true)
+                          }}
+                        />
+                      )}
+                      {checked && m.id === 'app' && (
+                        <Button
+                          className="text-xs"
+                          onClick={(e: React.MouseEvent) => {
+                            e.stopPropagation()
+                            setVerify({ method: 'authenticator app', destination: 'your device' })
+                          }}
+                        >
+                          Set up authenticator
+                        </Button>
+                      )}
+                    </div>
+                    <CheckCircleIcon className={clsx('size-4.5', checked ? 'text-fp-blue' : 'text-zinc-300 dark:text-zinc-600')} />
+                  </>
+                )}
+              </Radio>
+            ))}
+          </RadioGroup>
 
           <div className="mt-3.5 flex justify-between gap-2">
             <Button
@@ -135,7 +147,7 @@ export function SecurityScreen() {
         </div>
 
         <div className="rounded-xl border border-zinc-950/10 bg-white p-5 dark:border-white/10 dark:bg-zinc-900">
-          <h4 className="mt-0 mb-3 text-sm font-bold text-zinc-950 dark:text-white">Account & device activity</h4>
+          <h2 className="mt-0 mb-3 text-sm font-bold text-zinc-950 dark:text-white">Account & device activity</h2>
           {SESSIONS.map((s, i) => (
             <div
               key={i}

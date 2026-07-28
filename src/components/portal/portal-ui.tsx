@@ -32,7 +32,7 @@ export function PageHero({
 export function SectionHeader({ title, action }: { title: string; action?: ReactNode }) {
   return (
     <div className="mb-2.5 flex items-center justify-between gap-2">
-      <h3 className="text-sm font-bold text-zinc-950 dark:text-white">{title}</h3>
+      <h2 className="text-sm font-bold text-zinc-950 dark:text-white">{title}</h2>
       {action}
     </div>
   )

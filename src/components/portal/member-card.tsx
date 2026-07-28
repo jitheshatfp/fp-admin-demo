@@ -2,6 +2,7 @@
 
 import clsx from 'clsx'
 import JsBarcode from 'jsbarcode'
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import type { Member } from '@/data-portal'
 
@@ -60,9 +61,11 @@ export function MemberCard({ member, tier = 'Titanium', large = false }: { membe
       </div>
 
       <div className="relative mt-4 flex items-center gap-3">
-        <img
+        <Image
           src={member.photo}
           alt={member.name}
+          width={large ? 72 : 60}
+          height={large ? 72 : 60}
           className={clsx('rounded-full border-2 border-white/50 object-cover', large ? 'size-18' : 'size-15')}
         />
         <div className="min-w-0 flex-1">
@@ -99,7 +102,13 @@ export function MemberCard({ member, tier = 'Titanium', large = false }: { membe
 export function MiniMemberCard({ member, tier = 'Titanium' }: { member: Member; tier?: Tier }) {
   return (
     <div className={clsx('flex items-center gap-2 rounded-xl bg-gradient-to-br p-3.5 text-white', TIER_STYLES[tier])}>
-      <img src={member.photo} alt="" className="size-10 rounded-full border-2 border-white/50 object-cover" />
+      <Image
+        src={member.photo}
+        alt=""
+        width={40}
+        height={40}
+        className="size-10 rounded-full border-2 border-white/50 object-cover"
+      />
       <div className="min-w-0 flex-1">
         <div className="truncate text-sm font-bold">{member.name}</div>
         <div className="text-[10px] text-white/80">#{member.memberNumber}</div>

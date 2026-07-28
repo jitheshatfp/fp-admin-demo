@@ -38,7 +38,7 @@ export function PaymentsScreen() {
             <div className="flex gap-2">
               <InputGroup>
                 <MagnifyingGlassIcon data-slot="icon" />
-                <Input className="w-50" placeholder="Search invoices" />
+                <Input aria-label="Search invoices" className="w-50" placeholder="Search invoices" />
               </InputGroup>
               <Button outline className="text-xs">
                 <ArrowDownTrayIcon /> Export
@@ -54,7 +54,9 @@ export function PaymentsScreen() {
               <TableHeader>Reference</TableHeader>
               <TableHeader>Method</TableHeader>
               <TableHeader className="text-right">Amount</TableHeader>
-              <TableHeader></TableHeader>
+              <TableHeader>
+                <span className="sr-only">Actions</span>
+              </TableHeader>
             </TableRow>
           </TableHead>
           <TableBody>

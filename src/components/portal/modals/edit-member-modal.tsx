@@ -6,6 +6,7 @@ import { Field, Fieldset, Label, Legend } from '@/components/fieldset'
 import { Input } from '@/components/input'
 import { Select } from '@/components/select'
 import type { Member } from '@/data-portal'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export function EditMemberModal({
@@ -30,7 +31,13 @@ export function EditMemberModal({
           <Legend>Personal Details</Legend>
           <div className="mt-4 flex gap-6">
             <div className="flex w-32 flex-none flex-col items-center gap-2">
-              <img src={member.photo} alt="" className="size-32 rounded-xl border border-zinc-950/10 object-cover dark:border-white/10" />
+              <Image
+                src={member.photo}
+                alt=""
+                width={128}
+                height={128}
+                className="size-32 rounded-xl border border-zinc-950/10 object-cover dark:border-white/10"
+              />
               <Button color="red" className="text-xs">
                 Upload photo
               </Button>

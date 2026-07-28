@@ -47,7 +47,7 @@ export function SupportScreen() {
               <div className="mx-auto mb-3 flex size-14 items-center justify-center rounded-full bg-green-500/15 text-green-600 dark:text-green-400">
                 <ChatBubbleLeftRightIcon className="size-7" />
               </div>
-              <h4 className="mt-0 mb-1 text-zinc-950 dark:text-white">Message sent</h4>
+              <h3 className="mt-0 mb-1 text-zinc-950 dark:text-white">Message sent</h3>
               <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
                 Ticket #FP-{ticket} — we&apos;ll reply within 1 business day.
               </p>
@@ -124,7 +124,7 @@ export function SupportScreen() {
               >
                 <Icon className="size-3.5 flex-none text-fp-blue" />
                 <span className="flex-1 text-sm font-medium text-zinc-950 dark:text-white">{t}</span>
-                <ChevronRightIcon className="size-3.5 flex-none text-zinc-400" />
+                <ChevronRightIcon className="size-3.5 flex-none text-zinc-500 dark:text-zinc-400" />
               </a>
             ))}
           </div>

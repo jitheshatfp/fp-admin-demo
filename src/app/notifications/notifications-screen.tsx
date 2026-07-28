@@ -25,6 +25,7 @@ export function NotificationsScreen() {
               <button
                 key={f}
                 onClick={() => setFilter(f)}
+                aria-pressed={filter === f}
                 className={clsx(
                   'rounded-lg px-2.5 py-1.5 text-xs font-semibold capitalize',
                   filter === f

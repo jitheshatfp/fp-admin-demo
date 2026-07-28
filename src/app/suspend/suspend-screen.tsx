@@ -56,7 +56,7 @@ export function SuspendScreen() {
 
         {step === 0 && (
           <div>
-            <h3 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Before you suspend</h3>
+            <h2 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Before you suspend</h2>
             <div className="mb-4 grid gap-2">
               {GUIDELINES.map(([Icon, text]) => (
                 <div key={text} className="flex items-center gap-2 rounded-lg bg-zinc-950/[0.03] px-2.5 py-2 dark:bg-white/5">
@@ -86,7 +86,7 @@ export function SuspendScreen() {
 
         {step === 1 && (
           <div>
-            <h3 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">When would you like to pause?</h3>
+            <h2 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">When would you like to pause?</h2>
             <div className="mb-3.5 grid grid-cols-2 gap-3">
               <Field>
                 <Label>Start date</Label>
@@ -136,7 +136,7 @@ export function SuspendScreen() {
 
         {step === 2 && (
           <div>
-            <h3 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Confirm your suspension</h3>
+            <h2 className="mt-0 mb-3 text-base font-bold text-zinc-950 dark:text-white">Confirm your suspension</h2>
             <div className="mb-3.5 rounded-xl bg-zinc-950/[0.03] p-4 dark:bg-white/5">
               <div className="grid grid-cols-2 gap-3.5">
                 <Detail label="Start date" value={new Date(start).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })} />
