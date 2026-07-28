@@ -16,7 +16,7 @@ export function PageHero({
   actions?: ReactNode
 }) {
   return (
-    <div className="mb-4.5 rounded-2xl bg-gradient-to-r from-fp-blue via-[#1b72d1] to-fp-blue-deep p-5 text-white sm:p-6">
+    <div className="mb-4.5 rounded-2xl bg-fp-blue p-5 text-white sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="min-w-0 flex-1">
           {eyebrow && <div className="mb-1 text-[11px] font-semibold tracking-wider text-white/85 uppercase">{eyebrow}</div>}
