@@ -1,14 +1,39 @@
 import '@/styles/tailwind.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import type React from 'react'
 import { ApplicationLayout } from './application-layout'
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+const DESCRIPTION = 'Manage your Fitness Passport membership, visits, and payments.'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     template: '%s - Fitness Passport',
     default: 'Fitness Passport',
   },
-  description: '',
+  description: DESCRIPTION,
+  manifest: '/manifest.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Fitness Passport',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'Fitness Passport',
+    title: 'Fitness Passport',
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fitness Passport',
+    description: DESCRIPTION,
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#2388f1',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
